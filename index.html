@@ -1,0 +1,95 @@
+
+<html>
+    <head>
+<meta charset="UTF-8">
+<title>Website Design with html and css</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding:30px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background:blue;
+  color: white;
+}
+
+.fa-linkedin {
+  background: lightskyblue;
+  color: white;
+}
+
+.fa-instagram {
+  background:orangered;
+  color: white;
+}
+.flex-container {
+  display: flex;
+  flex-wrap:wrap;
+  padding-top:100px;
+  padding-left:30px;
+  padding-right:30px;
+}
+.flex-item{
+  padding: 20px;
+}
+.flex-item img:hover{
+  transform:scale(1.5)
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+        <ul class="nav-area">
+        <li><a href="#home">Home</a></li>
+          <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
+            <li><a href="#mygallery">My Gallery</a></li>
+        </ul>
+        </nav>
+        <br><br>
+        <div id="home">
+            <p class="first" style="text-align:center">Now we are in home page<br>I am Deepak<br>Go to the About me page to Know more about me</p>
+        </div>
+        <br><br><br><br><br>
+        <div id="aboutme">
+            <p class="second">I am Deepak.Currently I am persuing my B.Tech at
+            Vignan's Lara Institute Of Technology & Science.I am good at C++,Python,DBMS,HTML,
+            CSS.I like to spend my free time with my friends and family members.My hobbies are 
+                        Watching TV,Listening Music,Internet Surfing.</p>
+        </div>
+        <br><br><br><br><br><br><br>
+        <div id="contactme">
+          <p style="text-align:center;font-size:50px">Contact me on</p><br>
+          <p style="text-align:center;font-size:30px">Facebook</p>
+    <center><a href="https://www.facebook.com/deepak.pallikala6" class="fa fa-facebook"></a></center><br>
+    <p style="text-align:center;font-size:30px">LinkedIn</p> 
+    <center><a href="linkedin.com/in/deepak-pallikala-680508205" class="fa fa-linkedin"></a></center><br>
+    <p style="text-align:center;font-size:30px">Instagram</p>
+    <center><a href="https://www.instagram.com/deepak_pallikala" class="fa fa-instagram"></a></center>
+        </div>
+   <br><br><br><br>
+   <div id="mygallery">
+    <p style="font-size:50px;text-align:center">My Gallery</p>
+   <div class="flex-container">
+    <div class="flex-item"><img src="file:///C:/Users/Deepak/Documents/img2.jpg"></div>
+    <div class="flex-item"><img src="file:///C:/Users/Deepak/Documents/img3.jpg"></div> 
+    <div class="flex-item"><img src="file:///C:/Users/Deepak/Documents/img4.jpg"></div>
+    <div class="flex-item"><img src="file:///C:/Users/Deepak/Documents/img6.jpg"></div> 
+  </div>
+  </div>
+    </header>
+</body>
+</html>
