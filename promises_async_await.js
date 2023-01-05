@@ -1,4 +1,6 @@
+//async function
 async function getData(uId){
+    //creating the promise
     const p=new Promise(resolve => {
         setTimeout(() => {
             console.log("Fetched the data!");
