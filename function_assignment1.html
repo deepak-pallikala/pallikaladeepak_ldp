@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Functions</title>
+    </head>
+    <body>
+        <script>
+            function outer_func()
+            {
+                return "How are you?";
+            }
+            function inner_func(user,fun)
+            {
+               message=fun();
+               document.write("Hello "+user+ " "+message);
+            }
+            inner_func("kiran",outer_func);
+        </script>
+    </body>
+</html>
