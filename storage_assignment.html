@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+            Storage
+        </title>
+    </head>
+    <body>
+        <div id="demo1"></div>
+        <script>
+        function localCount()
+        {
+            if(localStorage.localCount)
+            {
+                localStorage.localCount=Number(localStorage.localCount)+1;
+            }
+            else
+            {
+                localStorage.localCount=1;
+            }
+            document.getElementById("demo1").innerHTML="Number of clicks:"+localStorage.localCount;
+        
+        }
+        </script>
+        <button onclick="localCount()" type="button">Local Count</button>
+        <div id="demo2"></div>
+        <script>
+            function sessionCount()
+            {
+                if(sessionStorage.sessionCount)
+                {
+                    sessionStorage.sessionCount=Number(sessionStorage.sessionCount)+1;
+                }
+                else
+                {
+                    sessionStorage.sessionCount=1;
+                }
+                document.getElementById("demo2").innerHTML="Number of clicks:"+sessionStorage.sessionCount;
+            }
+        </script>
+        <button onclick="sessionCount()" type="button">Session Count</button>
+    </body>
+</html>
