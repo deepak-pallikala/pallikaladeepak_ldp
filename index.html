@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta name="viewport">
+    <title>Zemoso Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload="initialize()">
+    <section id="main">
+      <div id="table">
+        <h2 style="text-align:center;position:fixed;margin-top:0;">Tables</h2>
+        <input type="text" class="search-table"
+          placeholder="Search table.. by number"
+          id="table-search"
+          onkeyup="search_table()">
+        <ul id="tables"></ul>
+      </div>
+      <div id="menu">
+        <h2 style="text-align:center;position:fixed;margin-top:0;">Menu</h2>
+        <input type="text" class="search-item"
+          placeholder="Search menu... by category, by food"
+          id="menu-search"
+          onkeyup="search_menu()">
+        <ul id="menu-items"></ul>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div id="modal-header"></div>
+          <div id="modal-body">
+            <table id="row"></table>
+            <p id="total"></p>
+          </div>
+          <div id="modal-footer"></div>
+        </div>
+      </div>
+    </section>
+    <script src="tables.js"></script>
+    <script src="menu.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
