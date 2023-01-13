@@ -1,3 +1,4 @@
+//Object Destruction
 const person = {
     name: “Noam Chomsky”,
     age: 92
