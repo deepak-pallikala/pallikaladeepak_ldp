@@ -1,5 +1,6 @@
 import React from 'react';
 import {Stack,TextField,InputAdornment,Typography} from '@mui/material'
+//importing necessary components in mui
 import {Icon} from './Icon'
 export const Typography1 = (props:any) => {
     return (
