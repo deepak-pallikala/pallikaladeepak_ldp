@@ -1,9 +1,11 @@
+//importing necessary components
 import {useState} from 'react'
 import {Stack,TextField,InputAdornment,Typography,Box,Button,Slider} from '@mui/material'
 import PaymentIcon from '@mui/icons-material/Payment';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 export const State = () => {
+    //set initial value as 5000
     const [value,setValue]=useState(5000)
     const a=3406064.54;
     return (
@@ -30,6 +32,7 @@ export const State = () => {
                            textAlign: 'left',
                            paddingLeft: '250px',
                  }}>
+                    //creating vertical slider
       
       <Slider
          sx={{
