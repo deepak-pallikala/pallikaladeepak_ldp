@@ -1,9 +1,11 @@
+//importing necessary components
 import {useState} from 'react'
 import {Stack,TextField,InputAdornment,Typography,Box,Button,Slider} from '@mui/material'
 import PaymentIcon from '@mui/icons-material/Payment';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 export const State = () => {
+  //initializing the value and lastValue as 0
   const [value, setValue] = useState(0);
   const [lastValue, setLastValue] = useState(0);
   const handleChange = (event:any, newValue:any) => {
@@ -39,7 +41,7 @@ export const State = () => {
                            textAlign: 'left',
                            paddingLeft: '250px',
                  }}>
-      
+      {/* using slider component */}
       <Slider
          sx={{
            '& input[type="range"]': {
